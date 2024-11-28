@@ -132,7 +132,7 @@ let mandelbulbShader;
 
 // Initialiser canvas og shader
 function setup() {
-    createCanvas(min(windowWidth, windowHeight), min(windowWidth, windowHeight), WEBGL);
+    createCanvas(1024,1024, WEBGL);
     mandelbulbShader = createShader(vert, frag);  // Opret shader program
     shader(mandelbulbShader);  // Brug shaderen
     noStroke();  // Ingen outline på former
